@@ -27,11 +27,12 @@ body{
 .link{
     text-decoration: none;
     padding: 0.5rem 1rem;
+    display: inline-block;
 }
 .link-primary{
     background-color: var(--primary-color);
     border-radius: 0.5rem;
-    color: white;
+    color: rgb(46, 41, 41);
 }
 .link-secondary{
     color: var(--primary-color);
@@ -120,6 +121,11 @@ body{
     text-align: center;
     color: white;
     border-top-right-radius: 1rem;
+}
+
+.footer .footer-header{
+    font-weight: bold;
+    font-size: large;
 }
 
 .footer .link{
