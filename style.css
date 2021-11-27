@@ -51,6 +51,22 @@ body{
     padding: 0rem 0.5rem;
 }
 
+.ordered-list{
+    list-style: none;
+    counter-reset: list-counter 3;
+}
+
+.ordered-list h1{
+   display: inline; 
+}
+
+.ordered-list li::before{
+    content: counter(list-counter) ". ";
+    counter-increment: list-counter -1;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
 /* navigation */
 
 .navigation{
